@@ -13,6 +13,6 @@
 
 <div align="center">
 
-
+![image](https://github.com/thaliadani/linkedln-clone/assets/31187727/4212fa6a-6227-47a0-8a3f-8400b5d3c380)
 
 </div>

@@ -1,0 +1,89 @@
+@import '../abstract/variaveis';
+
+.perfil {
+    position: relative;
+    margin-bottom: -0.5em;
+    .capa {
+        width: 100%;
+    }
+
+    .foto {
+        position: absolute;
+        top: 7em;
+        left: 1em;
+    }
+
+    .informacoes {
+        display: flex;
+        justify-content: space-between;
+        padding: 3em 1.5em 1.5em;
+        color: $cor-primario;
+
+        .informacao {
+            display: flex;
+            flex-direction: column;
+            gap: .3em;
+        }
+
+        .nome {
+            font-size: $tamanho-da-fonte + 8;
+            font-weight: $peso-da-fonte + 200;
+            color: $cor-primario;
+        }
+
+        .trabalho {
+            font-size: $tamanho-da-fonte;
+            font-weight: $peso-da-fonte + 200;
+            color: $cor-primario;
+        }
+
+        span {
+            font-size: $tamanho-da-fonte - 2;
+            color: $cor-secundario;
+        }
+
+        .destaque {
+            color: $cor-destaque;
+        }
+
+        .botoes {
+            padding-top: 0.3em;
+
+            button {
+                border: 0.1em solid $cor-destaque;
+                background-color: $cor-destaque;
+                color: $fundo-card;
+                font-size: $tamanho-da-fonte - 2;
+                font-weight: $peso-da-fonte + 100;
+                border-radius: 1em;
+                padding: .4em;
+                width: 128px;
+                cursor: pointer;
+                margin-right: 0.3em;
+
+                &:nth-child(2) {
+                    background-color: $fundo-card;
+                    color: $cor-destaque;
+                }
+            }
+        }
+
+        .empresa-instituicao {
+            display: flex;
+            flex-direction: column;
+
+            .empresa,
+            .instituicao {
+                display: flex;
+                gap: 0.5em;
+                align-items: center;
+                padding-top: 0.5em;
+
+                span {
+                    color: $cor-primario;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,59 @@
+@import '../abstract/variaveis';
+
+.atividades {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1.5em 0;
+
+    span:nth-child(1) {
+        font-weight: 500;
+        font-size: $tamanho-da-fonte + 3;
+        padding-bottom: 0.2em;
+    }
+
+    span:nth-child(2) {
+        color: $cor-destaque;
+        font-size: $tamanho-da-fonte - 3;
+        font-weight: 500;
+    }
+
+    span:nth-child(3), span:nth-child(5), span:nth-child(7){
+        font-size: $tamanho-da-fonte - 3;
+        color: $cor-secundario;
+        padding: 1em 0;
+    }
+
+    .publicacoes {
+        display: flex;
+        flex-direction: column;
+        border-bottom: solid 0.1em $cor-secundario;
+        .publicacao {
+            display: flex;
+            padding-bottom: 0.5em;
+            span{
+                padding-left: 0.5em;
+                font-size: $tamanho-da-fonte - 2;
+                color: $cor-primario;
+            }
+        }
+
+        .contagem {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 0.5em;
+            .reacoes{
+                display: flex;
+                gap: 0.3em;
+                align-items: center;
+            }
+            span{
+              color: $cor-secundario;
+              font-size: $tamanho-da-fonte - 4;  
+            } 
+        }
+    }
+    span:nth-child(7){
+        align-self: center;
+    }
+    
+}

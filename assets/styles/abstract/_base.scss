@@ -1,0 +1,46 @@
+@import '../abstract/variaveis';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: $fonte;
+    font-size: $tamanho-da-fonte;
+    font-weight: $peso-da-fonte;
+    color: $cor-primario;
+}
+
+body{
+    background-color: $fundo-body;
+}
+
+.container {
+    display: flex;
+}
+ 
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    float: left;
+}
+ 
+aside {
+    width: 30%;
+    float: right;
+}
+.card{
+    background-color: $fundo-card;
+    margin-top: 1em;
+    border-radius: 1em;
+    width: 780px;
+}
+
+
+
+
+
+
+

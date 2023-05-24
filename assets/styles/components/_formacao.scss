@@ -1,0 +1,32 @@
+@import '../abstract/variaveis';
+
+.formacao {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1.5em 1.5em;
+    gap: 0.5em;
+    .titulo{
+        font-weight: 500;
+        font-size: $tamanho-da-fonte + 4;
+    }
+
+    .instituicao {
+        display: flex;
+        gap: 0.5em;
+        img {
+            width: 48px;
+        }
+
+        .texto {
+            display: flex;
+            flex-direction: column;
+            span:nth-child(2){
+                font-size: $tamanho-da-fonte - 2;
+            }
+            span:nth-child(3){
+                font-size: $tamanho-da-fonte - 2;
+                color: $cor-secundario;
+            }
+        }
+    }
+}

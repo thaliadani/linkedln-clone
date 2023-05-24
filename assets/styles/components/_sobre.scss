@@ -1,0 +1,15 @@
+@import '../abstract/variaveis';
+
+.sobre{
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1.5em 1.5em;
+    gap: 0.5em;
+    span:nth-child(1){
+        font-weight: 500;
+        font-size: $tamanho-da-fonte + 4;
+    }
+    span:nth-child(2){
+        font-size: $tamanho-da-fonte - 3;
+    }
+}

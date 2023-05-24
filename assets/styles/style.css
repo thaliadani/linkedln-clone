@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+body {
+  background-color: #000000;
+}
+
+.container {
+  display: flex;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  float: left;
+}
+
+aside {
+  width: 30%;
+  float: right;
+}
+
+.card {
+  background-color: #1B2226;
+  margin-top: 1em;
+  border-radius: 1em;
+  width: 780px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #1B2226;
+  padding: 0.5em;
+}
+.navbar .logo-pesquisa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .logo-pesquisa img {
+  padding-right: 0.5em;
+}
+.navbar .logo-pesquisa input {
+  background-color: #38434F;
+  border: solid 0.5em #38434F;
+  border-radius: 0.3em;
+  background-image: url(/assets/images/navbar/icone-busca.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 24px;
+  padding-left: 2em;
+}
+.navbar .logo-pesquisa input::-moz-placeholder {
+  color: #ffffff;
+  font-size: 14px;
+}
+.navbar .logo-pesquisa input::placeholder {
+  color: #ffffff;
+  font-size: 14px;
+}
+.navbar .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+  gap: 2em;
+}
+.navbar .menu li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.navbar .menu li:nth-child(5) {
+  border-right: 0.1em solid #ffffff;
+  padding-right: 0.5em;
+}
+.navbar .menu li img {
+  width: 24px;
+}
+.navbar .menu li span {
+  font-size: 12px;
+}
+
+.perfil {
+  position: relative;
+  margin-bottom: -0.5em;
+}
+.perfil .capa {
+  width: 100%;
+}
+.perfil .foto {
+  position: absolute;
+  top: 7em;
+  left: 1em;
+}
+.perfil .informacoes {
+  display: flex;
+  justify-content: space-between;
+  padding: 3em 1.5em 1.5em;
+  color: #ffffff;
+}
+.perfil .informacoes .informacao {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+.perfil .informacoes .nome {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.perfil .informacoes .trabalho {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.perfil .informacoes span {
+  font-size: 14px;
+  color: #A4A7A8;
+}
+.perfil .informacoes .destaque {
+  color: #70B5F9;
+}
+.perfil .informacoes .botoes {
+  padding-top: 0.3em;
+}
+.perfil .informacoes .botoes button {
+  border: 0.1em solid #70B5F9;
+  background-color: #70B5F9;
+  color: #1B2226;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 1em;
+  padding: 0.4em;
+  width: 128px;
+  cursor: pointer;
+  margin-right: 0.3em;
+}
+.perfil .informacoes .botoes button:nth-child(2) {
+  background-color: #1B2226;
+  color: #70B5F9;
+}
+.perfil .informacoes .empresa-instituicao {
+  display: flex;
+  flex-direction: column;
+}
+.perfil .informacoes .empresa-instituicao .empresa,
+.perfil .informacoes .empresa-instituicao .instituicao {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  padding-top: 0.5em;
+}
+.perfil .informacoes .empresa-instituicao .empresa span,
+.perfil .informacoes .empresa-instituicao .instituicao span {
+  color: #ffffff;
+}
+
+.destaques {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 1.5em 1.5em;
+}
+.destaques .titulo {
+  font-weight: 500;
+  font-size: 19px;
+  padding-bottom: 1em;
+}
+.destaques .publicacoes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.destaques .publicacoes .publicacao {
+  border: solid 0.1em #A4A7A8;
+  border-radius: 0.5em;
+}
+.destaques .publicacoes .publicacao .legenda {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  padding: 0.8em 0.5em 0.5em 0.8em;
+}
+.destaques .publicacoes .publicacao .legenda span {
+  color: #A4A7A8;
+  font-size: 12px;
+}
+.destaques .publicacoes .publicacao .legenda span:nth-child(2) {
+  color: #ffffff;
+  font-size: 13px;
+}
+.destaques .publicacoes .publicacao .contagem {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3em;
+}
+.destaques .publicacoes .publicacao .contagem .reacoes {
+  display: flex;
+  align-items: center;
+}
+.destaques .publicacoes .publicacao .contagem span {
+  padding-left: 0.3em;
+  color: #A4A7A8;
+  font-size: 12px;
+}
+
+.atividades {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 1.5em 0;
+}
+.atividades span:nth-child(1) {
+  font-weight: 500;
+  font-size: 19px;
+  padding-bottom: 0.2em;
+}
+.atividades span:nth-child(2) {
+  color: #70B5F9;
+  font-size: 13px;
+  font-weight: 500;
+}
+.atividades span:nth-child(3), .atividades span:nth-child(5), .atividades span:nth-child(7) {
+  font-size: 13px;
+  color: #A4A7A8;
+  padding: 1em 0;
+}
+.atividades .publicacoes {
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid 0.1em #A4A7A8;
+}
+.atividades .publicacoes .publicacao {
+  display: flex;
+  padding-bottom: 0.5em;
+}
+.atividades .publicacoes .publicacao span {
+  padding-left: 0.5em;
+  font-size: 14px;
+  color: #ffffff;
+}
+.atividades .publicacoes .contagem {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5em;
+}
+.atividades .publicacoes .contagem .reacoes {
+  display: flex;
+  gap: 0.3em;
+  align-items: center;
+}
+.atividades .publicacoes .contagem span {
+  color: #A4A7A8;
+  font-size: 12px;
+}
+.atividades span:nth-child(7) {
+  align-self: center;
+}
+
+.sobre {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 1.5em 1.5em;
+  gap: 0.5em;
+}
+.sobre span:nth-child(1) {
+  font-weight: 500;
+  font-size: 20px;
+}
+.sobre span:nth-child(2) {
+  font-size: 13px;
+}
+
+.experiencias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em 1.5em 1.5em;
+}
+.experiencias .titulo {
+  font-weight: 500;
+  font-size: 20px;
+  padding-bottom: 0.5em;
+}
+.experiencias .empresa {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.experiencias .empresa img {
+  width: 48px;
+}
+.experiencias .empresa .texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.experiencias .empresa .texto span:nth-child(2) {
+  font-size: 14px;
+  color: #A4A7A8;
+}
+.experiencias .lista {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding-top: 0.5em;
+  padding-left: 1.2em;
+}
+.experiencias .lista .textos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.experiencias .lista .textos span:nth-child(2),
+.experiencias .lista .textos span:nth-child(3),
+.experiencias .lista .textos span:nth-child(4) {
+  font-size: 14px;
+}
+.experiencias .lista .textos span:nth-child(3),
+.experiencias .lista .textos span:nth-child(4) {
+  color: #A4A7A8;
+}
+
+.formacao {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 1.5em 1.5em;
+  gap: 0.5em;
+}
+.formacao .titulo {
+  font-weight: 500;
+  font-size: 20px;
+}
+.formacao .instituicao {
+  display: flex;
+  gap: 0.5em;
+}
+.formacao .instituicao img {
+  width: 48px;
+}
+.formacao .instituicao .texto {
+  display: flex;
+  flex-direction: column;
+}
+.formacao .instituicao .texto span:nth-child(2) {
+  font-size: 14px;
+}
+.formacao .instituicao .texto span:nth-child(3) {
+  font-size: 14px;
+  color: #A4A7A8;
+}
+
+.idiomas {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 1em 1.5em 1.5em;
+  margin-bottom: 3em;
+}
+.idiomas .titulo {
+  font-weight: 500;
+  font-size: 20px;
+}
+.idiomas .idioma {
+  display: flex;
+  flex-direction: column;
+}
+.idiomas .idioma span:nth-child(2) {
+  color: #A4A7A8;
+  font-size: 14px;
+}
+.idiomas .portugues {
+  border-bottom: solid 0.1em #A4A7A8;
+}
+.idiomas .portugues span:nth-child(2) {
+  padding-bottom: 0.5em;
+}
+
+.pessoas {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 1.5em 1.5em;
+  gap: 0.5em;
+  width: 320px;
+}
+.pessoas .titulo {
+  font-weight: 700;
+}
+.pessoas .descricao {
+  display: flex;
+  gap: 0.5em;
+  padding-top: 1em;
+}
+.pessoas .descricao img {
+  width: 48px;
+}
+.pessoas .descricao .texto {
+  display: flex;
+  flex-direction: column;
+}
+.pessoas .descricao .texto span:nth-child(1) {
+  font-size: 14px;
+  font-weight: 700;
+}
+.pessoas .descricao .texto span:nth-child(2) {
+  font-size: 12px;
+  color: #A4A7A8;
+}
+.pessoas .botao {
+  display: flex;
+  align-items: center;
+  padding-left: 3.5em;
+}
+.pessoas .botao button {
+  border: 0.1em solid #ffffff;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 1em;
+  padding: 0.3em 1em;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

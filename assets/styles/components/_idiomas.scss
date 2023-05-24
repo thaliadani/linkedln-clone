@@ -1,0 +1,27 @@
+@import '../abstract/variaveis';
+
+.idiomas{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 1em 1.5em 1.5em;
+    margin-bottom: 3em;
+    .titulo{
+        font-weight: 500;
+        font-size: $tamanho-da-fonte + 4;
+    }
+    .idioma{
+        display: flex;
+        flex-direction: column;
+        span:nth-child(2){
+            color: $cor-secundario;
+            font-size: $tamanho-da-fonte - 2;
+        }
+    }
+    .portugues{
+        border-bottom: solid 0.1em $cor-secundario;
+        span:nth-child(2){
+            padding-bottom: 0.5em;
+        }
+    }
+}

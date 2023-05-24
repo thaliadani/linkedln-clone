@@ -1,0 +1,52 @@
+@import '../abstract/variaveis';
+
+.pessoas {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1.5em 1.5em;
+    gap: 0.5em;
+    width: 320px;
+    .titulo {
+        font-weight: 700;
+    }
+
+    .descricao {
+        display: flex;
+        gap: 0.5em;
+        padding-top: 1em;
+        img {
+            width: 48px;
+        }
+
+        .texto {
+            display: flex;
+            flex-direction: column;
+
+            span:nth-child(1) {
+                font-size: $tamanho-da-fonte - 2;
+                font-weight: 700;
+            }
+
+            span:nth-child(2) {
+                font-size: $tamanho-da-fonte - 4;
+                color: $cor-secundario;
+            }
+        }
+    }
+
+    .botao{
+        display: flex;
+        align-items: center;
+        padding-left: 3.5em;
+
+        button {
+            border: 0.1em solid $cor-primario;
+            background-color: transparent;
+            font-size: $tamanho-da-fonte - 2;
+            font-weight: $peso-da-fonte + 200;
+            border-radius: 1em;
+            padding: .3em 1em;
+            cursor: pointer;
+        }
+    }
+}

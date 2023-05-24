@@ -1,0 +1,59 @@
+@import '../abstract/variaveis';
+
+.experiencias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em 1.5em 1.5em;
+
+    .titulo {
+        font-weight: 500;
+        font-size: $tamanho-da-fonte + 4;
+        padding-bottom: 0.5em;
+    }
+
+    .empresa {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+
+        img {
+            width: 48px;
+        }
+
+        .texto {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            span:nth-child(2) {
+                font-size: $tamanho-da-fonte - 2;
+                color: $cor-secundario;
+            }
+        }
+    }
+
+    .lista {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        padding-top: 0.5em;
+        padding-left: 1.2em;
+        .textos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            span:nth-child(2),
+            span:nth-child(3),
+            span:nth-child(4) {
+                font-size: $tamanho-da-fonte - 2;
+            }
+
+            span:nth-child(3),
+            span:nth-child(4) {
+                color: $cor-secundario;
+            }
+        }
+    }
+}
